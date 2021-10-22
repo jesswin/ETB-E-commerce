@@ -1,16 +1,15 @@
-# easytobuy
+# Easy-To-Buy (E-commerce)
 
-A new Flutter project.
+## Features
 
-## Getting Started
+An E-commerce Application in which User can:
+- Buy across different Categories.
+- New Listed Products from all the Categories on Home Page.
+- Recently Viewed Items.
+- Coupons to apply on different categories.
+- Special Coins to pay and play.
+- Atomicity while placing the order.
+- Mini in-app Game to earn Coins.
+- Admin Panel to add/edit/delete products and coupons.
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+#### Tech Stack Used: Flutter, Cloud FireStore.
