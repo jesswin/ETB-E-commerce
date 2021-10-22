@@ -71,7 +71,7 @@ class Developer extends StatelessWidget {
                             backgroundColor: accentColor,
                             backgroundImage: NetworkImage(
                                 "https://firebasestorage.googleapis.com/v0/b/easytobuy-b2dea.appspot.com/o/Developer%2FIMG-20210508-WA0062.jpg?alt=media&token=d14a5cca-1702-45c2-9bc8-83429c6b0fc1"),
-                            radius: 35,
+                            radius: 40,
                           ),
                           Center(
                             child: Text(
@@ -143,7 +143,7 @@ class Developer extends StatelessWidget {
                             backgroundColor: accentColor,
                             backgroundImage: NetworkImage(
                                 "https://firebasestorage.googleapis.com/v0/b/easytobuy-b2dea.appspot.com/o/Developer%2FWhatsApp%20Image%202021-06-17%20at%2012.36.34%20AM.jpeg?alt=media&token=bbef2a88-9668-452c-a6fa-7b2568c60fb6"),
-                            radius: 35,
+                            radius: 40,
                           ),
                           Center(
                             child: Text(

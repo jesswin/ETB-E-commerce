@@ -76,17 +76,17 @@ class _BottomBarState extends State<BottomBar> {
       appBar: AppBar(
         backgroundColor: primaryColor,
         title: Row(mainAxisSize: MainAxisSize.min, children: [
-          Container(
-            height: 55,
-            width: 55,
-            padding: EdgeInsets.all(10),
-            child: Image.asset(
-              "lib/assets/images/logo.png",
-              fit: BoxFit.contain,
-            ),
-          ),
+          // Container(
+          //   height: 55,
+          //   width: 55,
+          //   padding: EdgeInsets.all(10),
+          //   child: Image.asset(
+          //     "lib/assets/images/logo.png",
+          //     fit: BoxFit.contain,
+          //   ),
+          // ),
           Text(
-            "Easy To Buy",
+            "Virtual Shop",
             style: TextStyle(fontSize: text_md),
           ),
         ]),

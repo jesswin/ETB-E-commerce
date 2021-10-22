@@ -2,15 +2,15 @@ import 'package:flutter/material.dart';
 
 var currentUser;
 //main admin
-final admin = "4EqzUydEGbQ4UKBrGlN8NpRBYNn1";
+final admin = "T7wX8TZniPheDfcKChEWH0pme4E2";
 
 //other admins
 // final adminUserId = 'bCvGFijJVbVTj1Q3P88gwsVSFhv2';
 
-final etbShoesWatches = 'ic8aFR8UDCh0YrNP1e1Rb1Jr54F2';
-final etbClothes = 'bdpZ2aLCY6W3AAqSRkLKBMmsdPg1';
-final etbMobiles = 'fBwh5OhhMqbzA5VwG2EtlRS6OrW2';
-final etbAccessories = 'ms37MS8HAbQKXUeG9eLlCcQAE9K2';
+final etbShoesWatches = '5QCjsJVB3KVE7JlBw5ZDJIC9Kwu1';
+final etbClothes = 'sOodpb2qeuUBW3MMR7u2WyfTbnQ2';
+final etbMobiles = 'sKy9hZeqMweUPBlf3k5nbcMeVR33';
+final etbAccessories = '75NrDibK2FX0Ld4fZCF7hxpR9ua2';
 final etbLaptop = "utITcHFQUpXyPNISRQJubh9B7Gt1";
 
 var admins = [
@@ -21,7 +21,7 @@ var admins = [
   etbAccessories,
   etbLaptop
 ];
-Color primaryColor = Color(0xff55ACEE);
+Color primaryColor = Color(0xff5068a9);
 //3d5af1
 //5068a9
 Color accentColor = Colors.white;

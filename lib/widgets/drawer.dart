@@ -30,7 +30,7 @@ class MainDrawer extends StatelessWidget {
         appBar: AppBar(
           backgroundColor: primaryColor,
           title: Text(
-            "ETB",
+            "Virtual Shop",
             style: TextStyle(fontSize: text_md),
           ),
         ),

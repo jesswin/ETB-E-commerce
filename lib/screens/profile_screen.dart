@@ -1,6 +1,6 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:easytobuy/providers/orders_provider.dart';
 import 'package:easytobuy/screens/contact_screen.dart';
+import 'package:easytobuy/screens/developerContact_screen.dart';
 import 'package:easytobuy/screens/order_screen.dart';
 import 'package:easytobuy/screens/wallet_screen.dart';
 import 'package:easytobuy/widgets/loading.dart';
@@ -87,8 +87,8 @@ class _ProfileState extends State<Profile> {
                       child: Card(
                         child: ListTile(
                           leading: Icon(Icons.account_balance_wallet_rounded),
-                          title: Text("ETB Wallet"),
-                          subtitle: Text("Manage your ETB Wallet"),
+                          title: Text("VS Wallet"),
+                          subtitle: Text("Manage your VS Wallet"),
                         ),
                       ),
                     ),
@@ -125,7 +125,7 @@ class _ProfileState extends State<Profile> {
         backgroundColor: primaryColor,
         child: Icon(Icons.support_agent_outlined),
         onPressed: () => Navigator.of(context)
-            .push(MaterialPageRoute(builder: (context) => Contact())),
+            .push(MaterialPageRoute(builder: (context) => Developer())),
       ),
     );
   }

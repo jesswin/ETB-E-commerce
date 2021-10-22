@@ -293,7 +293,8 @@ class _MainProductState extends State<MainProduct> {
                           children: [
                             Column(
                               children: [
-                                SliderCaro(snap.data["sliderImages"]),
+                                SliderCaro(snap.data["sliderImages"],
+                                    fromHome: false),
                                 SizedBox(
                                   height: 30,
                                 ),
@@ -309,7 +310,7 @@ class _MainProductState extends State<MainProduct> {
                                         });
                                       },
                                       child: Text(
-                                        "#onlyAtETB",
+                                        "#onlyAtVirtualShop",
                                         style: TextStyle(
                                             fontSize: text_md,
                                             color: Colors.grey,
@@ -460,10 +461,32 @@ class _MainProductState extends State<MainProduct> {
                   .snapshots(),
             ),
       bottomNavigationBar: Container(
-        height: 120,
-        child: Column(children: [
+        height: 60,
+        child: Row(children: [
           Container(
-              width: MediaQuery.of(context).size.width,
+            decoration: BoxDecoration(
+                border: Border(
+              right: BorderSide(width: 1.5, color: Colors.grey),
+            )),
+            width: MediaQuery.of(context).size.width * .5,
+            height: 60,
+            child: FlatButton(
+              color: Colors.white,
+              onPressed: () {
+                qInStock == 0
+                    ? toast("This item is Out Of Stock")
+                    : categoriesWithSize.contains(widget.cat)
+                        ? addToCart(1)
+                        : showModal(ourPrice, totalDiscount, qInStock);
+              },
+              child: Text(
+                "Add To Cart",
+                style: TextStyle(fontSize: text_sm),
+              ),
+            ),
+          ),
+          Container(
+              width: MediaQuery.of(context).size.width * .5,
               height: 60,
               child: FlatButton(
                   onPressed: qInStock == 0
@@ -504,46 +527,6 @@ class _MainProductState extends State<MainProduct> {
                   child: Text("Buy Now",
                       style:
                           TextStyle(fontSize: text_sm, color: Colors.white)))),
-          Row(children: [
-            Container(
-              decoration: BoxDecoration(
-                  border: Border(
-                right: BorderSide(width: 1.5, color: Colors.grey),
-              )),
-              width: MediaQuery.of(context).size.width * .5,
-              height: 60,
-              child: FlatButton(
-                color: Colors.white,
-                onPressed: () {
-                  qInStock == 0
-                      ? toast("This item is Out Of Stock")
-                      : categoriesWithSize.contains(widget.cat)
-                          ? addToCart(1)
-                          : showModal(ourPrice, totalDiscount, qInStock);
-                },
-                child: Text(
-                  "Add To Cart",
-                  style: TextStyle(fontSize: text_sm),
-                ),
-              ),
-            ),
-            Container(
-              width: MediaQuery.of(context).size.width * .5,
-              height: 60,
-              child: FlatButton(
-                onPressed: () {
-                  Navigator.of(context)
-                      .push(MaterialPageRoute(builder: (context) => Contact()));
-                },
-                child: Text(
-                  "Inquire",
-                  style: TextStyle(
-                    fontSize: text_sm,
-                  ),
-                ),
-              ),
-            ),
-          ]),
         ]),
       ),
     );

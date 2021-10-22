@@ -137,7 +137,7 @@ class _WalletState extends State<Wallet> {
                 await Provider.of<Orders>(context, listen: false).getCoins();
                 Fluttertoast.showToast(
                     gravity: ToastGravity.CENTER,
-                    msg: text.toString() + " ETB Coins Credited",
+                    msg: text.toString() + " VS Coins Credited",
                     toastLength: Toast.LENGTH_SHORT);
                 await Future.delayed(Duration(seconds: 1));
                 key.currentState.toggleCard();
@@ -174,7 +174,7 @@ class _WalletState extends State<Wallet> {
             child: Padding(
           padding: const EdgeInsets.all(8.0),
           child: Text(
-            text.toString() + " ETB Coins",
+            text.toString() + " VS Coins",
             style: TextStyle(fontSize: text_md),
           ),
         )),
@@ -193,7 +193,7 @@ class _WalletState extends State<Wallet> {
       appBar: AppBar(
         backgroundColor: primaryColor,
         title: Text(
-          "ETB Wallet",
+          "VS Wallet",
           style: TextStyle(fontSize: text_md),
         ),
       ),
@@ -222,7 +222,7 @@ class _WalletState extends State<Wallet> {
                                           bottomLeft: Radius.circular(20),
                                           topRight: Radius.circular(20))),
                                   padding: EdgeInsets.all(10),
-                                  height: 80,
+                                  height: 100,
                                   width: double.infinity,
                                   child: Container(
                                     child: Column(
@@ -230,7 +230,7 @@ class _WalletState extends State<Wallet> {
                                             MainAxisAlignment.center,
                                         children: [
                                           Text(
-                                            "ETB Coins",
+                                            "VS Coins",
                                             style:
                                                 TextStyle(color: accentColor),
                                           ),
@@ -256,7 +256,7 @@ class _WalletState extends State<Wallet> {
                                                 )
                                               ]),
                                           Text(
-                                            "1 ETB Coin = 1 INR",
+                                            "1 VS Coin = 1 INR",
                                             style:
                                                 TextStyle(color: accentColor),
                                           ),
@@ -278,7 +278,7 @@ class _WalletState extends State<Wallet> {
                                           style: TextStyle(fontSize: text_md),
                                         ),
                                         subtitle: Text(
-                                          "Use here and get ETB Coins",
+                                          "Use here and get VS Coins",
                                           style: TextStyle(fontSize: text_sm),
                                         ),
                                         trailing: Container(
@@ -426,11 +426,11 @@ class _WalletState extends State<Wallet> {
                               ),
                               ListTile(
                                 title: Text(
-                                  "Use ETB Coins to Flip a Card and get ETB Coins",
+                                  "Use VS Coins to Flip a Card and get VS Coins",
                                   style: TextStyle(fontSize: text_md),
                                 ),
                                 subtitle: Text(
-                                  "50 ETB Coins for one chance",
+                                  "50 VS Coins for one chance",
                                 ),
                                 trailing: FlatButton(
                                     onPressed: () async {
@@ -445,28 +445,23 @@ class _WalletState extends State<Wallet> {
                                       style: TextStyle(color: primaryColor),
                                     )),
                               ),
-                              Padding(
-                                padding: const EdgeInsets.all(8.0),
-                                child: Row(
-                                    mainAxisAlignment:
-                                        MainAxisAlignment.spaceAround,
-                                    children: [
-                                      flipCard(cardKey, coinsToCredit[0]),
-                                      flipCard(cardKey2, coinsToCredit[1]),
-                                      flipCard(cardKey3, coinsToCredit[2]),
-                                    ]),
-                              ),
-                              Padding(
-                                padding: const EdgeInsets.all(8.0),
-                                child: Row(
-                                    mainAxisAlignment:
-                                        MainAxisAlignment.spaceAround,
-                                    children: [
-                                      flipCard(cardKey4, coinsToCredit[3]),
-                                      flipCard(cardKey5, coinsToCredit[4]),
-                                      flipCard(cardKey6, coinsToCredit[5]),
-                                    ]),
-                              ),
+                              Row(
+                                  mainAxisAlignment:
+                                      MainAxisAlignment.spaceAround,
+                                  children: [
+                                    flipCard(cardKey, coinsToCredit[0]),
+                                    flipCard(cardKey2, coinsToCredit[1]),
+                                    flipCard(cardKey3, coinsToCredit[2]),
+                                  ]),
+
+                              Row(
+                                  mainAxisAlignment:
+                                      MainAxisAlignment.spaceAround,
+                                  children: [
+                                    flipCard(cardKey4, coinsToCredit[3]),
+                                    flipCard(cardKey5, coinsToCredit[4]),
+                                    flipCard(cardKey6, coinsToCredit[5]),
+                                  ]),
 
                               //
 

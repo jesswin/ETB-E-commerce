@@ -8,7 +8,8 @@ import '../main_config.dart';
 class SliderCaro extends StatefulWidget {
   var imgList;
   var controls;
-  SliderCaro(this.imgList, [this.controls = false]);
+  var fromHome;
+  SliderCaro(this.imgList, {this.controls = false, this.fromHome = true});
   @override
   _SliderCaroState createState() => _SliderCaroState();
 }
@@ -17,7 +18,7 @@ class _SliderCaroState extends State<SliderCaro> {
   Widget build(BuildContext context) {
     return Container(
       margin: EdgeInsets.symmetric(vertical: 10, horizontal: 5),
-      height: 250,
+      height: widget.fromHome ? 300 : 350,
       child: Swiper(
         autoplay: true,
         autoplayDelay: 2000,

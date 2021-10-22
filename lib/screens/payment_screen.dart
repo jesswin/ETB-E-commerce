@@ -540,7 +540,7 @@ class _PaymentState extends State<Payment> {
       "amount": widget.payUsingCoins
           ? (double.parse(productData[1].toString()) * 100) - widget.coins * 100
           : (double.parse(productData[1].toString()) * 100),
-      "name": "Easy To Buy",
+      "name": "Virtual Shop",
       // 'description': 'Fine T-Shirt',
       // "prefill": {"contact": "8200464922", "email": "dev@dev.com"},
       "external": {

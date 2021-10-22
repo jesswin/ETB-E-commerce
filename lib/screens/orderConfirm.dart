@@ -107,7 +107,7 @@ class _OrderConfirmPageState extends State<OrderConfirmPage> {
                       child: Row(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
-                            Text("ETB Coins Earned -  ${widget.coinsEarned}",
+                            Text("VS Coins Earned -  ${widget.coinsEarned}",
                                 style: TextStyle(
                                   color: coinColor,
                                   fontSize: 18,

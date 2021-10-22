@@ -74,7 +74,7 @@ class _HomeState extends State<Home> {
         ),
       ),
       Container(
-        height: 250,
+        height: 300,
         child: StreamBuilder(
             stream: FirebaseFirestore.instance
                 .collection(cat)
@@ -118,7 +118,7 @@ class _HomeState extends State<Home> {
                                   child: Column(
                                     children: [
                                       Container(
-                                          height: 130,
+                                          height: 180,
                                           width: 200,
                                           child: ClipRRect(
                                             borderRadius:
@@ -238,7 +238,7 @@ class _HomeState extends State<Home> {
                               borderSide:
                                   BorderSide(color: primaryColor, width: 1),
                               borderRadius: BorderRadius.circular(15)),
-                          hintText: "Search #onlyAtETB",
+                          hintText: "Search on Virtual Shop",
                           hintStyle: TextStyle(fontSize: text_sm)),
                     ),
                   ),
@@ -591,7 +591,7 @@ class _HomeState extends State<Home> {
                               ),
                             ),
                             Container(
-                                height: 250,
+                                height: 300,
                                 child: ListView.builder(
                                   itemCount: Provider.of<Orders>(context,
                                                   listen: false)
@@ -643,7 +643,7 @@ class _HomeState extends State<Home> {
                                               child: Column(
                                                 children: [
                                                   Container(
-                                                      height: 130,
+                                                      height: 180,
                                                       width: 200,
                                                       child: ClipRRect(
                                                         borderRadius:
