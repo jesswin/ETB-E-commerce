@@ -1,4 +1,4 @@
-# Easy-To-Buy (E-commerce)
+# Virtual-Shop (E-commerce)
 
 ## Features
 
@@ -6,6 +6,7 @@ An E-commerce Application in which User can:
 - Buy across different Categories.
 - New Listed Products from all the Categories on Home Page.
 - Recently Viewed Items.
+- Filters on Listing Page
 - Coupons to apply on different categories.
 - Special Coins to pay and play.
 - Atomicity while placing the order.
